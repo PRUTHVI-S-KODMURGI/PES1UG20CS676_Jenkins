@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh ' build PES1UG20CS676-1'
+                sh 'build PES1UG20CS676-1'
             }
         }
         stage('Test') {
             steps {
-                sh ' build PES1UG20CS676-2'
+                sh 'build PES1UG20CS676-2'
             }
         }
         stage('Deploy') {
