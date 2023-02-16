@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'g++ hello.cpp'
                 sh 'build PES1UG20CS676-1'
             }
         }
