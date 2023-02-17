@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'make -C main'
+                sh 'g++ hello.cpp'
                 echo 'successful build!'
             }
         }
         stage('Test') {
             steps {
-                sh 'hello_exec'
+                sh '.\a.out'
                 echo 'successful test!'
             }
         }
