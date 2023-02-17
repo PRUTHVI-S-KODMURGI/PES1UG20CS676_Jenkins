@@ -3,13 +3,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ hello.cpp'
-                sh 'PES1UG20CS676-1'
+                sh 'make -C main'
+                echo 'successful build!'
             }
         }
         stage('Test') {
             steps {
-                sh 'PES1UG20CS676-2'
+                sh 'hello_exec'
+                echo 'successful test!'
             }
         }
         stage('Deploy') {
